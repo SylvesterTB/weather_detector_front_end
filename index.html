@@ -1,0 +1,27 @@
+<html>
+ <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+
+$("#myButton").click(function(){
+
+alert('its working')
+
+});
+
+});
+</script>
+ </head>
+ <body>
+   <h1>Weather notification app<h1>
+   <img src="weather_image.jpg" alt="weather" width="500" height="333">
+   <h2>Current temperature</h2>
+   <button type="button">Get temperature!</button>
+   {{ temp }}<br>
+   <h2>Application control</h2>
+   <button id="myButton" value="Click me!">Click me!</button>
+   <button type="button">Start!</button>
+   <button type="button">Stop!</button>
+ </body>
+</html>

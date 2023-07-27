@@ -1,0 +1,21 @@
+<html>
+ <head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+ </head>
+ <style>
+   img {
+    border-radius: 50%;
+  }
+ </style>
+ <body>
+   <h1>Weather notification app</h1>
+  <img src="{{ url_for('static', filename='Munich_image.webp') }}" alt="weather" width="500" height="333"> 
+    <h2>Current temperature</h2>
+   <button type="button">Get temperature!</button>
+   <FONT COLOR="#{{ color }}">{{ temp }}</FONT>
+   <h2>Application control</h2>
+   <button id="myButton" value="Click me!">Click me!</button>
+   <button type="button">Start!</button>
+   <button type="button">Stop!</button>
+ </body>
+</html>
